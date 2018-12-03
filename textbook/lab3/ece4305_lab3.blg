@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ece4305_lab3.aux
+The style file: plain.bst
+Database file #1: lab1bib.bib
+Warning--to sort, need author or key in ieee80211ac
+Warning--empty author in ieee80211ac
+You've used 4 entries,
+            2118 wiz_defined-function locations,
+            518 strings with 4896 characters,
+and the built_in function-call counts, 1102 in all, are:
+= -- 113
+> -- 22
+< -- 2
++ -- 10
+- -- 6
+* -- 56
+:= -- 171
+add.period$ -- 11
+call.type$ -- 4
+change.case$ -- 15
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 53
+empty$ -- 101
+format.name$ -- 6
+if$ -- 247
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 3
+newline$ -- 22
+num.names$ -- 6
+pop$ -- 20
+preamble$ -- 1
+purify$ -- 11
+quote$ -- 0
+skip$ -- 46
+stack$ -- 0
+substring$ -- 70
+swap$ -- 18
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 16
+warning$ -- 2
+while$ -- 11
+width$ -- 5
+write$ -- 42
+(There were 2 warnings)

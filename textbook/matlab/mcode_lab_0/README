@@ -1,0 +1,9 @@
+This code is for ECE4305 lab0 and should contain:
+- generateNoise.m
+- loopback.m
+- startup.m
+along with the necessary Pluto driver files.
+
+It is recommended that startup.m script is run first to setup the MATLAB driver appropriately, which will allow the PlutoSDR object to run correctly.
+
+If you notice any errors please create a bug report at: https://github.com/wilab/ece4305/issues

@@ -1,0 +1,30 @@
+\begin{thebibliography}{1}
+
+\bibitem{ieee80211ac}
+{IEEE Standard for Information technology-- Telecommunications and information
+  exchange between systemsLocal and metropolitan area networks-- Specific
+  requirements--Part 11: Wireless LAN Medium Access Control (MAC) and Physical
+  Layer (PHY) Specifications--Amendment 4: Enhancements for Very High
+  Throughput for Operation in Bands below 6 GHz.}
+\newblock {\em {IEEE Std 802.11ac-2013 (Amendment to IEEE Std 802.11-2012, as
+  amended by IEEE Std 802.11ae-2012, IEEE Std 802.11aa-2012, and IEEE Std
+  802.11ad-2012)}}, pages 1--425, Dec 2013.
+
+\bibitem{barke1953group}
+RH~Barke.
+\newblock Group synchronizing of binary digital sequences.
+\newblock {\em Communication theory. Butterworth, London}, pages 273--287,
+  1953.
+
+\bibitem{xcorr}
+The~MathWorks Inc.
+\newblock xcorr.
+\newblock [Online]: https://www.mathworks.com/help/signal/ref/xcorr.html, 2017.
+
+\bibitem{kay1998fundamentals}
+Steven~M Kay.
+\newblock Fundamentals of statistical signal processing, vol. ii: Detection
+  theory.
+\newblock {\em Signal Processing. Upper Saddle River, NJ: Prentice Hall}, 1998.
+
+\end{thebibliography}

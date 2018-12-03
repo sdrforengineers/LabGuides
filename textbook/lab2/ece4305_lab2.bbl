@@ -1,0 +1,27 @@
+\begin{thebibliography}{1}
+
+\bibitem{ad9364}
+{Analog Devices}.
+\newblock Rf agile transceiver: Ad9364.
+\newblock [Online]:
+  http://www.analog.com/media/en/technical-documentation/data-sheets/AD9364.pdf.
+
+\bibitem{morelli1998}
+Michele Morelli and Umberto Mengali.
+\newblock Feedforward frequency estimation for psk: A tutorial review.
+\newblock {\em European Transactions on Telecommunications}, 9(2):103--116,
+  1998.
+
+\bibitem{rice2009}
+Michael Rice.
+\newblock {\em Digital Communications: A Discrete-Time Approach}.
+\newblock Pearson/Prentice Hall, Upper Saddle River, New Jersey, 2009.
+
+\bibitem{Wang2004}
+Y.~Wang, K.~Shi, and E.~Serpedin.
+\newblock Non-data-aided feedforward carrier frequency offset estimators for
+  qam constellations: A nonlinear least-squares approach.
+\newblock {\em EURASIP Journal on Advances in Signal Processing},
+  2004(13):856139, 2004.
+
+\end{thebibliography}

@@ -1,0 +1,57 @@
+\begin{thebibliography}{10}
+
+\bibitem{boum2006}
+S.~Boumaiza, T.~Liu, and F.~M. Ghannouchi.
+\newblock On the wireless transmitters linear and nonlionear distortions
+  detection and pre-correction.
+\newblock In {\em 2006 Canadian Conference on Electrical and Computer
+  Engineering}, pages 1510--1513, May 2006.
+
+\bibitem{harris1993}
+L.~Erup, F.~M. Gardner, and R.~A. Harris.
+\newblock Interpolation in digital modems. ii. implementation and performance.
+\newblock {\em IEEE Transactions on Communications}, 41(6):998--1008, Jun 1993.
+
+\bibitem{gardner1986}
+F.~Gardner.
+\newblock A bpsk/qpsk timing-error detector for sampled receivers.
+\newblock {\em IEEE Transactions on Communications}, 34(5):423--429, May 1986.
+
+\bibitem{unitDelay}
+T.~I. Laakso, V.~Valimaki, M.~Karjalainen, and U.~K. Laine.
+\newblock Splitting the unit delay [fir/all pass filters design].
+\newblock {\em IEEE Signal Processing Magazine}, 13(1):30--60, Jan 1996.
+
+\bibitem{mengali1997synchronization}
+U.~Mengali.
+\newblock {\em Synchronization Techniques for Digital Receivers}.
+\newblock Applications of Communications Theory. Springer US, 1997.
+
+\bibitem{mm1976}
+K.~Mueller and M.~Muller.
+\newblock Timing recovery in digital synchronous data receivers.
+\newblock {\em IEEE Transactions on Communications}, 24(5):516--531, May 1976.
+
+\bibitem{proakis2008}
+John~G. Proakis and Masoud Salehi.
+\newblock {\em Digital Communications 5ed}.
+\newblock McGraw-Hill, 2008.
+
+\bibitem{rice2009}
+Michael Rice.
+\newblock {\em Digital Communications: A Discrete-Time Approach}.
+\newblock Pearson/Prentice Hall, Upper Saddle River, New Jersey, 2009.
+
+\bibitem{saleh1981}
+A.~A.~M. Saleh.
+\newblock Frequency-independent and frequency-dependent nonlinear models of twt
+  amplifiers.
+\newblock {\em IEEE Transactions on Communications}, 29(11):1715--1720,
+  November 1981.
+
+\bibitem{Thiran1971}
+J.~P. Thiran.
+\newblock Recursive digital filters with maximally flat group delay.
+\newblock {\em IEEE Transactions on Circuit Theory}, 18(6):659--664, Nov 1971.
+
+\end{thebibliography}

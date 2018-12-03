@@ -1,0 +1,40 @@
+[General]
+def_graphic_ext=
+img_extIsRegExp=false
+img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
+kileprversion=2
+kileversion=2.1.3
+lastDocument=ece4305_lab2.tex
+masterDocument=
+name=lab2
+pkg_extIsRegExp=false
+pkg_extensions=.cls .sty .bbx .cbx .lbx
+src_extIsRegExp=false
+src_extensions=.tex .ltx .latex .dtx .ins
+
+[Tools]
+MakeIndex=
+QuickBuild=
+
+[document-settings,item:ece4305_lab2.tex]
+Bookmarks=
+Encoding=ISO-8859-1
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
+[item:ece4305_lab2.tex]
+archive=true
+column=14
+encoding=ISO-8859-1
+highlight=LaTeX
+line=210
+mode=LaTeX
+open=false
+order=0
+
+[view-settings,view=0,item:ece4305_lab2.tex]
+CursorColumn=14
+CursorLine=210
+JumpList=
+ViMarks=.,0,0,[,0,0,],-1,-1

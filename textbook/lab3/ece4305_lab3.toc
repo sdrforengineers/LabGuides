@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Theoretical Preparation}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}O Frame, Where Art Thou?}{2}{subsection.1.1}
+\contentsline {section}{\numberline {2}Frame Synchronization}{2}{section.2}
+\contentsline {section}{\numberline {3}Open-ended Design Problem: Full Frame Recovery}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Objective}{7}{subsection.3.1}
+\contentsline {section}{\numberline {4}Lab Report Preparation \& Submission Instructions}{7}{section.4}

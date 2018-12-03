@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% outlines.sty - Provides an "outline" environment for mixed-level
+% outline lists
+%
+% Charles Pecheur, UCL, March 2005
+% pecheur@info.ucl.ac.be
+%
+% Note: this package has no connection with outline.sty or outliner.sty, 
+% that are available on CTAN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Usage: 
+%
+% \usepackage{outlines}
+%
+% \begin{outline}[<list-style>] 
+%   \1 <level 1 text>
+%   \1[<label>] <level 1 text>
+%      \2 <level 2 text>
+%         \3 <level 3 text>
+%            \4 <level 4 text>
+% \0 <normal paragraph>
+%   ...
+% \end{outline}
+%
+% where:
+% + <list-style> is an optional list environment name 
+%   (e.g. itemize, enumerate, ...).  The default is itemize.
+%   The same style is used for all levels.
+% + <label> is an optional label, as in \item[<label>].
+% + Levels may be mixed freely, except that a \1 must come before
+%   the first \2, a \2 before the first \3, etc. 
+%   (this restriction is inherited from list environments).
+% + \0 gives a normal, non-list paragraph.
+% 
+% Do not nest outlines inside outlines or other lists.  Lists inside outlines
+% should work fine.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ProvidesClass{outlines}
+
+\makeatletter
+% \ol@type stores the (list) environment name used in outlines
+\newcommand{\ol@type}{itemize}
+% \ol@inc, \ol@dec increase/decrease the indentation level
+\newcommand{\ol@inc}{\begin{\ol@type}}
+\newcommand{\ol@dec}{\end{\ol@type}}
+
+% \ol@toz .. \ol@toiiii "transition" to indentation level 0..4 by opening or
+% closing nested list levels as needed.
+% They are dynamically modified according to the current level.
+\newcommand{\ol@toz}{}
+\newcommand{\ol@toi}{}
+\newcommand{\ol@toii}{}
+\newcommand{\ol@toiii}{}
+\newcommand{\ol@toiiii}{}
+
+% \ol@commands{C0}{C1}{C2}{C3}{C4} set the level transition commands 
+% above to C0..C4
+\newcommand{\ol@commands}[5]{%
+  \renewcommand{\ol@toz}{#1}%
+  \renewcommand{\ol@toi}{#2}%
+  \renewcommand{\ol@toii}{#3}%
+  \renewcommand{\ol@toiii}{#4}%
+  \renewcommand{\ol@toiiii}{#5}%
+}
+
+% \ol@exit resets transition commands.  This is not mandatory, just cleaner.
+\newcommand{\ol@exit}{%
+  \ol@commands{}{}{}{}{}}
+% \ol@z .. \ol@iiii update all transitions for level 0..4
+\newcommand{\ol@z}{%
+  \ol@commands{}{\ol@inc}{\ol@inc\ol@inc}%
+    {\ol@inc\ol@inc\ol@inc}{\ol@inc\ol@inc\ol@inc\ol@inc}}
+\newcommand{\ol@i}{%
+  \ol@commands{\ol@dec}{}{\ol@inc}%
+    {\ol@inc\ol@inc}{\ol@inc\ol@inc\ol@inc}}
+\newcommand{\ol@ii}{%
+  \ol@commands{\ol@dec\ol@dec}{\ol@dec}{}{\ol@inc}{\ol@inc\ol@inc}}
+\newcommand{\ol@iii}{%
+  \ol@commands{\ol@dec\ol@dec\ol@dec}{\ol@dec\ol@dec}{\ol@dec}%
+    {}{\ol@inc}}
+\newcommand{\ol@iiii}{%
+  \ol@commands{\ol@dec\ol@dec\ol@dec\ol@dec}{\ol@dec\ol@dec\ol@dec}%
+	    {\ol@dec\ol@dec}{\ol@dec}{}}
+
+% the outline environment provides commands \1..\4 for 
+% introducing items at level 1..4, and \0 for normal paragraphs 
+% within the outline section.
+\newenvironment{outline}[1][itemize]{%
+  \renewcommand{\ol@type}{#1}%
+  \ol@z%
+  \newcommand{\0}{\ol@toz\ol@z}%
+  \newcommand{\1}{\ol@toi\ol@i\item}%
+  \newcommand{\2}{\ol@toii\ol@ii\item}%
+  \newcommand{\3}{\ol@toiii\ol@iii\item}%  
+  \newcommand{\4}{\ol@toiiii\ol@iiii\item}%  
+}{%
+  \ol@toz\ol@exit%
+}
+\makeatother
+
+

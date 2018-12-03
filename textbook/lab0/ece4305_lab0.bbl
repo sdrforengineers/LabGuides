@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{ad936x}
+{Analog Devices}.
+\newblock {AD9361, AD9364 and AD9363}.
+\newblock [Online]:
+  https://wiki.analog.com/resources/eval/user-guides/ad-fmcomms2-ebz/ad9361.
+
+\bibitem{libiio}
+{Analog Devices}.
+\newblock {IIO System Object}.
+\newblock [Online]:
+  https://wiki.analog.com/\_detail/resources/tools-software/linux-software/libiio/clients/sys\_obj.png?id=resources%3Atools-software%3Alinux-software%3Alibiio%3Aclients%3Amatlab_simulink.
+
+\bibitem{harris1978}
+F.~J. Harris.
+\newblock On the use of windows for harmonic analysis with the discrete fourier
+  transform.
+\newblock {\em Proceedings of the IEEE}, 66(1):51--83, Jan 1978.
+
+\bibitem{wikipedia_ieee802.11}
+{IEEE 802.11 Working Group}.
+\newblock {IEEE} 802.11: The working group setting the standards for wireless
+  {LANs}.
+\newblock [Online]: http://www.ieee802.org/11/.
+
+\bibitem{sigpow}
+{Marcus Müller}.
+\newblock {How to Calculate power spectral density using USRP data?}
+\newblock [Online]:
+  http://stackoverflow.com/questions/40523362/how-to-calculate-power-spectral-density-using-usrp-data.
+
+\bibitem{rice2009}
+Michael Rice.
+\newblock {\em Digital Communications: A Discrete-Time Approach}.
+\newblock Pearson/Prentice Hall, Upper Saddle River, New Jersey, 2009.
+
+\bibitem{silage2009}
+Dennis Silage.
+\newblock {\em Digital Communication Systems using MATLAB and Simulink}.
+\newblock Bookstand Publishing, Gilroy, CA, 2009.
+
+\end{thebibliography}
