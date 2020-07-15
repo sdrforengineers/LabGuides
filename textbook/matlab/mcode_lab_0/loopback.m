@@ -1,15 +1,12 @@
 %% Example Loopback
 clear all;
-addpath(genpath('../drivers'));
 %% Setup PlutoSDR
-sdr = PlutoSDR;
-sdr.mode = 'transceive';
-sdr.rx_gain = 10;
-sdr.rx_gain_mode = 'fast-attack';
+rx = sdrrx('Pluto');
+tx = sdrtx('Pluto');
+rx.GainSource = 'AGC Fast Attack';
 %% Setup SDR buffers
 ch_size = 1e6;
-sdr.in_ch_size = ch_size;
-sdr.out_ch_size = ch_size;
+rx.SamplesPerFrame = ch_size;
 %% Generate complex transmit signal
 Fs = 30.72e6;
 Fc = 1e6;
@@ -19,13 +16,14 @@ sigR = sin(2*pi*Fc*t+0).*amplitude;
 sigC = sin(2*pi*Fc*t+pi/2).*amplitude;
 sig = complex(sigR,sigC);
 
-%% Transceive with SDR
+%% Transmit and receive with PlutoSDR
+tx.transmitRepeat(sig.');
 frames = 10;
 cap = zeros(ch_size*frames,1);
 prev = 0;
 for frame = 1:frames
     % Call radio
-    o = sdr.transceive(sig);
+    o = rx();
     % Save data
     indx = (frame-1)*ch_size+1 : frame*ch_size;
     cap(indx) = o;
